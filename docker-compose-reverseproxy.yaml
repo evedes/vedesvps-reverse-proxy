@@ -8,9 +8,10 @@ services:
       - "443:443"
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
-      - ./ssl/creatorsguild:/etc/nginx/ssl/creatorsguild
       - ./ssl/eduardovedes:/etc/nginx/ssl/eduardovedes
+      - ./ssl/vedespt:/etc/nginx/ssl/vedespt
       - ./ssl/wecraftcode:/etc/nginx/ssl/wecraftcode
+      - ./ssl/creatorsguild:/etc/nginx/ssl/creatorsguild
 networks:
   vedesvps:
     external: true
