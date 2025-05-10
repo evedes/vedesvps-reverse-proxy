@@ -9,6 +9,7 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
       - ./ssl/creatorsguild:/etc/nginx/ssl/creatorsguild
+      - ./ssl/today:/etc/nginx/ssl/today
       - ./ssl/eduardovedes:/etc/nginx/ssl/eduardovedes
       - ./ssl/vedespt:/etc/nginx/ssl/vedespt
       - ./ssl/wecraftcode:/etc/nginx/ssl/wecraftcode
