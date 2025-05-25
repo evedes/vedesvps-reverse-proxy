@@ -12,6 +12,7 @@ services:
       - ./ssl/vedespt:/etc/nginx/ssl/vedespt
       - ./ssl/wecraftcode:/etc/nginx/ssl/wecraftcode
       - ./ssl/creatorsguild:/etc/nginx/ssl/creatorsguild
+      - ./ssl/leanly:/etc/nginx/ssl/leanly
 networks:
   vedesvps:
     external: true
