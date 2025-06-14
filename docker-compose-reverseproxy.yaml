@@ -13,6 +13,7 @@ services:
       - ./ssl/wecraftcode:/etc/nginx/ssl/wecraftcode
       - ./ssl/creatorsguild:/etc/nginx/ssl/creatorsguild
       - ./ssl/leanly:/etc/nginx/ssl/leanly
+      - ./ssl/zarta:/etc/nginx/ssl/zarta
 networks:
   vedesvps:
     external: true
