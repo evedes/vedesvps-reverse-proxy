@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Docker-based Nginx reverse proxy for a DigitalOcean droplet that handles SSL termination and routing for multiple domains including eduardovedes.com, vedes.pt, wecraftcode.org, creatorsguild.ink, leanly.ink, and zarta.vedes.pt.
+This is a Docker-based Nginx reverse proxy for a DigitalOcean droplet that handles SSL termination and routing for multiple domains including eduardovedes.com, vedes.pt, wecraftcode.org, atomize.ink, leanly.ink, and zarta.vedes.pt.
 
 ## Architecture
 
@@ -35,6 +35,7 @@ docker exec nginx-reverseproxy nginx -t
 ## Domain Configuration Pattern
 
 Each domain follows this pattern in nginx.conf:
+
 - HTTP (port 80): Redirects to HTTPS
 - HTTPS (port 443): SSL termination with proxy_pass to backend services
 - Backend services are accessed via Docker network names (e.g., `frontend-{domain}:3000`)
@@ -43,7 +44,9 @@ Each domain follows this pattern in nginx.conf:
 ## SSL Configuration
 
 SSL certificates are expected in ./ssl/{domain}/ directories with:
+
 - fullchain.pem (certificate chain)
 - privkey.pem (private key)
 
 All domains use TLSv1.2 and TLSv1.3 with HSTS headers for security.
+
