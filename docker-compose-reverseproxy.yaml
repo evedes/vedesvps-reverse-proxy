@@ -12,8 +12,6 @@ services:
       - ./ssl/vedespt:/etc/nginx/ssl/vedespt
       - ./ssl/wecraftcode:/etc/nginx/ssl/wecraftcode
       - ./ssl/atomize:/etc/nginx/ssl/atomize
-      - ./ssl/leanly:/etc/nginx/ssl/leanly
-      - ./ssl/zarta:/etc/nginx/ssl/zarta
       - ./ssl/bicodobra:/etc/nginx/ssl/bicodobra
 networks:
   vedesvps:
