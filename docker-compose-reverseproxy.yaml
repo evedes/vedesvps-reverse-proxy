@@ -14,6 +14,7 @@ services:
       - ./ssl/atomize:/etc/nginx/ssl/atomize
       - ./ssl/leanly:/etc/nginx/ssl/leanly
       - ./ssl/zarta:/etc/nginx/ssl/zarta
+      - ./ssl/bicodobra:/etc/nginx/ssl/bicodobra
 networks:
   vedesvps:
     external: true
