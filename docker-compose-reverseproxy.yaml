@@ -12,7 +12,6 @@ services:
       - ./ssl/vedespt:/etc/nginx/ssl/vedespt
       - ./ssl/wecraftcode:/etc/nginx/ssl/wecraftcode
       - ./ssl/atomize:/etc/nginx/ssl/atomize
-      - ./ssl/bicodobra:/etc/nginx/ssl/bicodobra
 networks:
   vedesvps:
     external: true
