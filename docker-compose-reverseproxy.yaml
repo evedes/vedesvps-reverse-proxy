@@ -9,7 +9,6 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
       - ./ssl/eduardovedes:/etc/nginx/ssl/eduardovedes
-      - ./ssl/the-perfect-boilerplate:/etc/nginx/ssl/the-perfect-boilerplate
       - ./ssl/atomize:/etc/nginx/ssl/atomize
 networks:
   vedesvps:
